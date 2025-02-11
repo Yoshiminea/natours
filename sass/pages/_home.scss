@@ -1,0 +1,47 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  margin-top: -25vh;
+  padding: 25vh 0;
+  &-layout {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10rem;
+    column-gap: 10rem;
+  }
+}
+.section-features {
+  background-image: linear-gradient(
+      to right,
+
+      rgba($color-primary, 0.8),
+      rgba($color-primary, 0.8)
+    ),
+    url(/img/hero-small.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 125vh;
+  // padding-top: 25vh;
+  clip-path: polygon(0 25vh, 100vw 0, 100vw 100vh, 0 125vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -25vh;
+
+  &-layout {
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    gap: 6rem;
+  }
+}
+
+.section-tours {
+  padding-bottom: 8rem;
+  &__layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__btn-container {
+    text-align: center;
+    grid-column: 1/-1;
+  }
+}
